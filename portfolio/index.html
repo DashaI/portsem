@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+
+            <div class="user">
+                <div class="user__avatar">
+                    <img src="https://placehold.it/57/333" alt="">
+                </div>
+               <div class="user__content">
+                    <div class="user__name">
+                        Иванова<br>Дарья
+                    </div>
+                    <div class="user__prof">Cтудентка СТЭТ</div>
+                </div>
+            </div>
+
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#">Работы</a>
+                <a class="nav__link" href="#">Обо мне</a>
+                <a class="nav__link" href="#">Блог</a>
+                <a class="nav__link" href="#">Контакты</a>
+                <a class="nav__link  nav__link--btn" href="#" data-modal="#modal_hire_me">Связатся со мной</a>
+            </nav>
+
+           
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Intro -->
+<section class="intro">
+    <div class="container">
+
+        <div class="intro__inner">
+            <div class="intro__content">
+                <h2 class="intro__subtitle">Привет, я</h2>
+                <h1 class="intro__title">Иванова Дарья</h1>
+                <div class="intro__text">Студентка ГБОУПО СТЭТ</div>
+
+                <div class="social">
+                    
+                   
+                    <a class="social__link" href="#">
+                         <a class="social__link" href="https://github.com/DashaI">         
+                        <img src="https://img.icons8.com/color/452/discord-new-logo.png" width="30" height="35" alt="">
+                    </a>
+                    
+                    <a class="social__link" href="#">
+                        <a class="social__link" href="https://vk.com/mark_laneganx64">
+                        <img src="https://free-png.ru/wp-content/uploads/2020/04/VK_Blue_Logo_t-170x170.png"  width="30" height="30" alt="">
+                    </a>
+                   
+                </div>
+
+                <a class="btn" href="#" data-modal="#modal_hire_me">СВЯЗАТСЯ СО МНОЙ</a>
+                <button class="btn" type="button" data-modal="#modal_resume">
+ПОСМОТРЕТЬ МОЕ РЕЗЮМЕ</button>
+             </div>
+
+            <img class="intro__photo" src="images/designer_photo.png" alt="">
+        </div><!-- /.intro__inner -->
+    </div><!-- /.container -->
+</section>
+
+
+
+<!-- Works -->
+<div class="works">
+    <div class="container">
+
+       <div class="works__nav">
+            <a class="works__nav-link" href="#" data-filter="all">Все</a>
+            <a class="works__nav-link" href="#" data-filter="app">Профессиональный опыт</a>
+            <a class="works__nav-link" href="#" data-filter="website">Внеурочная деятельность</a>
+            <a class="works__nav-link" href="#" data-filter="interaction">Дополнительное образование</a>
+        </div>
+
+        
+        <div class="portfolio" id="portfolio">
+            <div class="portfolio__col" data-cat="app">
+                <div class="work" data-modal="#modal_project_1">
+                    <img class="work__image" src="https://placehold.it/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Профессиональный опыт</div>
+                        <div class="work__title">
+                            Сертификат
+                            <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="website">
+                <div class="work" data-modal="#modal_project_2">
+                    <img class="work__image" src="https://placehold.it/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Научно-исследовательская работа</div>
+                        <div class="work__title">
+                            Курсовая работа 
+                            <time class="work__date" datetime="2019-11-22 19:00">2021</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="interaction">
+                <div class="work">
+                    <img class="work__image" src="https://placehold.it/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Научно-исследовательская работа</div>
+                        <div class="work__title">
+                            Индивидуальный проект
+                            <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                      
+        </div><!-- /.portfolio -->
+
+        <div class="text-center">
+            <a class="btn  btn--sm" href="#">ЕЩЕ</a>
+        </div>
+
+    </div><!-- /.container -->
+</div><!-- /.works -->
+
+
+
+<!-- About -->
+<section class="about">
+    <div class="container">
+
+        <div class="about__inner">
+            <div class="about__photo">
+                <img class="img" src="images/designer_photo.png" alt="">
+            </div>
+
+            <div class="about__content">
+                <h3 class="about__title">Обо мне </h3>
+                <h2 class="about__bigtitle">Кто я?</h2>
+                <div class="about__text">
+                  <p>Я, Иванова Дарья Андреевна, 2003 года рождения, обучаюсь ГБОУПО "СТЭТ" с 2018 года по специальности "Информационные системы (по отраслям)".
+
+ </p>
+                    <p>Врожденное любопытство и старательность позволяют мне впитывать большое количество знаний, что поднимает уровень моего профессионализма. 
+
+</p>
+                    <p>Я считаю, что при исполнении любого задания, важно проявлять ответственность и усидчивость. Данные качества помогут выполнить любую работу замечательно.</p>
+                </div>
+                <a class="btn" href="#">Связь</a>
+                <button class="btn" type="button">Смотеть мое резюме</button>
+            </div><!-- /.about__content -->
+        </div><!-- /.about__inner -->
+
+    </div><!-- /.container -->
+</section>
+
+
+
+<!-- Reviews -->
+<div class="reviews">
+    <div class="container">
+
+        <div class="reviews__item">
+            <div class="reviews__text">
+                <p>Еще один великолепный миф!</p>
+            </div>
+
+            <div class="reviews__author">
+                <img class="reviews__photo" src="https://placehold.it/103/333" alt="">
+                <div class="reviews__name">Роберт Асприн</div>
+                <div class="reviews__company">Корпорация М.И.Ф.</div>
+                <div class="reviews__rating">
+                    <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="">
+                    <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="">
+                    <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="">
+                    <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="">
+                    <img class="reviews__star" src="images/star.svg" width="13" height="13" alt="">
+                </div>
+            </div>
+        </div><!-- /.reviews__item -->
+
+    </div><!-- /.container -->
+</div><!-- /.reviews -->
+
+
+
+<!-- News -->
+<section class="news">
+    <div class="container">
+
+        <div class="news__header">
+            <h3 class="news__title">Читать</h3>
+            <div class="news__text">Межет, посмотреть?</div>
+        </div>
+
+
+        
+        <div class="articles">
+            <div class="articles__col">
+                <div class="articles__item">
+                    <div class="articles__header">
+                        <time class="articles__date">
+                              10<br>июнь
+                        </time>
+                        <a href="#">
+                            <img class="articles__photo" src="https://www.barsokagi.com/wp-content/uploads/2018/01/wine-history-370x257.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="articles__content">
+                        <h4 class="articles__title">
+                            <a href="#">Факты о родном измерении Великого Мага Скива</a>
+                        </h4>
+                        <div class="articles__cat">ИСТОРИЯ</div>
+                        <div class="articles__text">
+                           <p>Что ВЫ знаете о измерении Пент? А ведь именно оттуда родом Великий Маг Скив...</p>
+                        </div>
+                    </div>
+                    <a class="btn  btn--sm" href="#">ЧИТАТЬ</a>
+                </div>
+            </div>
+
+            <div class="articles__col">
+                <div class="articles__item">
+                    <div class="articles__header">
+                        <time class="articles__date">
+                            10<br>июня
+                        </time>
+                        <a href="#">
+                            <img class="articles__photo" src="https://media.canadianunderwriter.ca/uploads/2019/06/MA-merger-deal-puzzle-370x257.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="articles__content">
+                        <h4 class="articles__title">
+                            <a href="#">Очередная победа Корпорации М.И.Ф.</a>
+                        </h4>
+                        <div class="articles__cat">НОВОСТИ</div>
+                        <div class="articles__text">
+                            <p>Корпорация М.И.Ф(Молодые Искоренители Фатальностей) недавно одержала еще одну незабываемую победу. Спешу вам напомнить, что корпорация работала над делом...</p>
+                        </div>
+                    </div>
+                    <a class="btn  btn--sm" href="#">ЧИТАТЬ</a>
+                </div>
+            </div>
+
+            <div class="articles__col">
+                <div class="articles__item">
+                    <div class="articles__header">
+                        <time class="articles__date">
+                            10<br>июня
+                        </time>
+                        <a href="#">
+                            <img class="articles__photo" src="https://shop.hmgpaint.com/wp-content/uploads/2019/05/BS-RAL-FAN-DECKProduct_Image__43524.1553773066.386.513__02621.1593698833.1280.1280-370x257.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="articles__content">
+                        <h4 class="articles__title">
+                            <a href="#">10 ЛУЧШИХ ИЗОБРЕТЕНИЙ ПО МНЕНИ ДЕВОЛОВ БАЗАРА</a>
+                        </h4>
+                        <div class="articles__cat">МИСТИКА БАЗАРА-НА-ДЕВЕ</div>
+                        <div class="articles__text">
+                            <p>Феноменальные феномены 21-го века! Никогда не знаешь, что именно...</p>
+                        </div>
+                    </div>
+                    <a class="btn  btn--sm" href="#">Читать</a>
+                </div>
+            </div>
+        </div><!-- /.articles -->
+
+        <div class="news__footer">
+            <a class="news__link" href="#">Больше постов</a>
+        </div>
+
+    </div><!-- /.container -->
+</section>
+
+
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer__inner">
+            <div class="footer__credits">
+                <div class="footer__copyright">
+                    &copy; 2018 UI43 - Free Templates
+                </div>
+
+                <div class="footer__social">
+                    <a href="#" target="_blank">
+                        <img src="images/vk-reproductor.svg" width="24" alt="">
+                    </a>
+                     <a href="#" target="_blank">
+                        <img src="images/discord.svg" width="24" alt="">
+                    </a>               
+                                     
+                </div>
+            </div><!-- /.footer__credits -->
+
+            <nav class="footer__nav">
+                <a class="footer__nav-link" href="#">Работы</a>
+                <a class="footer__nav-link" href="#">Обо мне</a>
+                <a class="footer__nav-link" href="#">Блог</a>
+                <a class="footer__nav-link" href="#">Контакты</a>
+                <a class="footer__nav-link  footer__nav-link--btn" href="#">Связатся со мной</a>
+            </nav>
+        </div><!-- /.footer__inner -->
+
+    </div><!-- /.container -->
+</footer>
+
+
+<!-- Modals -->
+<div class="modal" id="modal_project_1">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="images/modal-close.svg" alt="Close">
+        </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+           
+
+                
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Сертификат</h3>
+                    <div class="modal-work__info">
+                        Профессиональный опыт <span class="modal-work__info-divider">|</span> 2019
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Практика</div>
+                    <div class="modal-work__client-company">ГБОУПО СТЭТ</div>
+                </div>
+
+              
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/back.svg" height="11" alt="">
+                        Предыдущее
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Следующее
+                        <img src="images/next.svg" height="11" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /.modal-work__content -->
+        </div><!--/.modal-work -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+        
+
+
+
+<div class="modal" id="modal_project_2">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="images/modal-close.svg" alt="Close">
+        </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Курсовая работа </h3>
+                    <div class="modal-work__info">
+                        Научно-исследовательская работа <span class="modal-work__info-divider">|</span> 2021
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Обучение</div>
+                    <div class="modal-work__client-company">ГБОУСОШ СТЭТ</div>
+                </div>
+
+               
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/back.svg" height="11" alt="">
+                       Предыдущее
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Следующее
+                        <img src="images/next.svg" height="11" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /.modal-work__content -->
+        </div><!--/.modal-work -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal" id="modal_resume">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="images/modal-close.svg" alt="Close">
+        </button>
+
+        <div class="modal__content">
+            <h3 class="modal__title  text-center">РЕЗЮМЕ</h3>
+
+            <div class="text-center">
+                <a class="btn btn--thin" href="#">СКАЧАТЬ PDF</a>
+                <a class="btn btn--thin" href="#">РАСПЕЧАТАТЬ</a>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline__col  timeline__col--left">
+                    <h4 class="timeline__title">ОПЫТ</h4>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2020 <b>Уебная практика</b></time>
+                        <h5 class="timeline__subtitle">Студент</h5>
+                        <div class="timeline__position">Эксплуатация и модификация информационных систем</div>
+                        <div class="timeline__text">
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2020 <b>Производственная практика</b></time>
+                        <h5 class="timeline__subtitle">Студент</h5>
+                        <div class="timeline__position">Эксплуатация и модификация информационных систем</div>
+                        <div class="timeline__text">
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2021 <b>Учебная практика</b></time>
+                        <h5 class="timeline__subtitle">Студент</h5>
+                        <div class="timeline__position">Участие в разработке информационных систем</div>
+                        <div class="timeline__text">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline__col  timeline__col--right">
+                    <h4 class="timeline__title">Образование</h4>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2019=2022</time>
+                        <h5 class="timeline__subtitle">Студент</h5>
+                        <div class="timeline__position">ГБОУПО СТЭТ</div>
+                    </div>
+
+                    
+
+                    <h4 class="timeline__title">Навыки</h4>
+                    <div class="progress-bar">
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Работа с базой даннык</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Пользователь ПК</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">Анализ работы ПК</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.progress-bar -->
+
+                   
+
+                   
+                </div><!-- /.timeline__col -->
+
+            </div><!-- /.timeline -->
+
+             <div class="text-center">
+                <a class="btn" href="#" data-modal="#modal_hire_me">Связаться со мной</a>
+            </div>
+        </div><!-- /.modal__content -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal" id="modal_hire_me">
+    <div class="modal__dialog  modal__dialog--sm">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="images/modal-close.svg" alt="Close">
+        </button>
+
+        <div class="contact">
+            <div class="contact__left">
+                <h3 class="modal__title mb-0">Давайте пообщаемся!</h3>
+                <h4 class="modal__subtitle">Позвоните мне или напишите на почту</h4>
+
+                <ul class="contact__info">
+                    <li class="contact__info-item">
+                        <img class="contact__info-icon" src="images/phone.svg" alt="">
+                        +7(978)000-00-00
+                    </li>
+                    <li class="contact__info-item">
+                        <img class="contact__info-icon" src="images/mail.svg" alt="">
+                        ivanova.dragon----.--.@---.---
+                    </li>
+                </ul>
+
+                <form class="form" action="/" method="post">
+                    <div class="form__group">
+                        <label class="form__label" for="input-email">Адресс электронной почты</label>
+                        <input class="form__input" name="input-email" type="text" id="input-email" placeholder="Adress e-mail">
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label" for="input-text">Задать вопрос</label>
+                        <textarea class="form__textarea" name="input-text" id="input-text" placeholder="Type your request..."></textarea>
+                    </div>
+
+                    <div class="text-right">
+                        <button class="btn" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div><!-- /.contact__left -->
+        </div><!-- /.contact -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+
+
+<!-- JS -->
+<script src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
